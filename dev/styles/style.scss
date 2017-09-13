@@ -1,0 +1,299 @@
+$break-large: 840px;
+$break-medium: 696px;
+$break-mediumToSmall: 600px;
+$break-small: 480px;
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+header{
+	background-image:url(asset/patternBackground.jpg);
+	height: 100vh;
+}
+
+body {
+	background: #f4f8d7;
+}
+
+.wrapper {
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Righteous', cursive;
+	text-transform: uppercase;
+	font-size: 45px;
+	margin-bottom: 0;
+	color: black;
+	margin: 0 auto;
+	padding-top: 13px;
+
+	@media screen and (max-width: $break-mediumToSmall) {
+	    font-size: 30px;
+	}
+}
+
+.title {
+	background: rgba(254,70,82,0.6);
+	width: 60%;
+	margin:0 auto;
+	padding: 15px;
+	position: relative;
+	top: 240px;
+}
+
+.headings {
+	border: 4px solid #f4f8d7;
+}
+
+h2 {
+	text-align: center;
+	font-family: 'Mada', sans-serif;
+	margin-top: 10px;
+	text-transform: capitalize;
+
+	@media screen and (max-width: $break-mediumToSmall) {
+	    font-size: 20px;
+	}
+}
+
+form {
+	padding: 50px;
+	background-image:url(asset/patternBackground2.jpg); 
+	margin-bottom: 50px;
+	max-width: 1180px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+
+.excited, .peaceful, .notBad, .notGood, .upset, .furious {
+	text-align: center;
+
+	@media screen and (max-width: $break-small) {
+	    margin-bottom: 40px;
+	}
+}
+
+.goodMood {
+	display: flex;
+	margin-bottom: 20px;
+
+	@media screen and (max-width: $break-small) {
+	    display: block;
+	}
+}
+
+.badMood {
+	display: flex;
+
+	@media screen and (max-width: $break-small) {
+	    display: block;
+	}
+}
+
+form img {
+	width: 30%;
+	align-items: center;
+	margin-bottom: 0;
+	
+	@media screen and (max-width: $break-mediumToSmall) {
+	    width: 60%;
+	}
+
+	@media screen and (max-width: $break-small) {
+	    width: 50%;
+	}
+}
+
+form label {
+	font-family: 'Righteous', cursive;
+	text-transform: uppercase;
+	color: #f4f8d7;
+	font-size: 18px;
+	
+	@media screen and (max-width: $break-mediumToSmall) {
+	    display: none;
+	}
+
+	@media screen and (max-width: $break-small) {
+	    display: block;
+	}
+
+}
+
+.submitButton {
+	font-size: 18px;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Righteous', cursive;
+	padding: 15px 30px 15px 30px;
+	border-radius: 15px;
+	background: #f4f8d7;
+	color:#fc797d;
+	border:none;
+	margin-top: 30px;
+}
+
+
+.singleMovie {
+	width: 30%;
+	border: 4px solid black;
+	padding: 20px;
+	border-radius: 20px;
+	background: rgba(247,246,225,0.9);
+	margin-top: 50px;
+
+	@media screen and (max-width: $break-large) {
+	    width: 45%;
+	}
+
+	@media screen and (max-width: $break-small) {
+	    width: 90%;
+	    margin: 0 auto;
+	    margin-top: 20px;
+	}
+
+}
+
+.description {
+	background: rgba(254,70,82,0.6);
+	padding: 15px;
+	border-radius: 20px;
+}
+
+.description h2{
+	margin-top: 0;
+}
+
+.emojis {
+	padding: 30px;
+	border: 4px solid #f4f8d7;
+	text-align: center;
+}
+
+.radio {
+	text-align: center;
+}
+
+.moviesList {
+	text-align: center;
+	max-width: 1180px;
+	margin: 0 auto;
+	margin-top: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.moviesList h2 {
+	font-family: 'Righteous', cursive;
+	color: black;
+	font-size: 25px;
+	font-weight: bold;
+
+	@media screen and (max-width: $break-large) {
+	    font-size: 20px;
+	}
+}
+
+.moviesList h3{
+	font-family: 'Mada', sans-serif;
+	margin: 0;
+}
+
+.moviesList img {
+	margin-bottom: 10px;
+	// margin-top: 30px;
+	max-width: 100%;
+	border-radius: 20px;
+}
+
+.moviesList p {
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	font-family: 'Mada', sans-serif;
+}
+
+.description button {
+	background: #f4f8d7;
+	color: #fc797d;
+	font-family: 'Righteous', cursive;
+	padding: 10px 25px 10px 25px;
+	margin-top: 20px;
+	border-radius: 15px;
+	text-transform: uppercase;
+	border:none;
+}
+
+.savedFilms {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1180px;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+
+.outerList {
+	background: url(asset/patternBackground.jpg);
+	padding-top: 20px;
+	padding-bottom: 100px;
+}
+
+.movieIds {
+	width: 18%;
+	background: rgba(1,1,1,0.8);
+	padding: 15px;
+	border-radius: 20px;
+	margin-bottom: 30px;
+
+	@media screen and (max-width: $break-large) {
+	    width: 30%;
+	}
+
+	@media screen and (max-width: $break-small) {
+	    width: 40%;
+	    margin: 0 auto;
+	    margin-bottom: 20px;
+	}
+}
+
+.movieIds h2 {
+	font-size: 18px;
+	color: #f4f8d7;
+	font-family: 'Righteous', cursive;
+
+	@media screen and (max-width: $break-small) {
+	    font-size: 14px;
+	}
+}
+
+
+.movieIds img {
+	max-width: 100%;
+	border-radius: 20px;
+}
+
+footer {
+	background:#fc797d;
+	color: #f4f8d7;
+	padding: 20px;
+	text-align: center;
+}
+
+footer h3, footer h4 {
+	margin: 0;
+	font-size: 15px;
+	font-weight: lighter;
+}
+
+
+
